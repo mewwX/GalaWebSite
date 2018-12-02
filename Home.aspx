@@ -644,7 +644,7 @@ $(document).ready(function(){
 
     	$('.countdown').final_countdown({
     	    'start': 1362139200,
-    	    'end': 1388461320,
+    	    'end': 1397061320,
     	    'now': 1387461319
         });
     });
