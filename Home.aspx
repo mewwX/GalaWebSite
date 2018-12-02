@@ -5,51 +5,20 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  
   <title>Gala2k19</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="Timecircle/TimeCircles.js"></script>
-  <link href="TimeCircles.css" rel="stylesheet">  
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="demo.css"/> 
     <script>
-$(".example").TimeCircles(); 
-
-
-        /*Temporary code*/
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function () {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="demo"
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-}, 1000);
+       
     </script>
   <style>
   body {
@@ -97,7 +66,8 @@ var x = setInterval(function () {
     }
   }
   .bg-1 {
-      background: #2d2d30;
+      /*background: #2d2d30;*/
+    background-image: url('../Pics/Notavailable1.jpg'); 
       color: #bdbdbd;
   }
   .bg-1 h3 {color: #fff;}
@@ -202,11 +172,19 @@ var x = setInterval(function () {
       resize: none;
   }
   .example{
-      background-image: url('../Pics/gala bg6.jpg');
+
+      background-image: url('../Pics/space.jpg');
       background-repeat: no-repeat, repeat;
       padding: 50px;
     background-size: 100%;         /* Generic*/
+    /*position: relative;
+  opacity: 0.90;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  
   p {
   /*text-align: center;
   font-size: 60px;
@@ -216,6 +194,40 @@ var x = setInterval(function () {
     margin-right: 100px;
     margin-bottom:50px;
     display: block; width: 600px; }
+
+  .middledemoo {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+      @font-face {
+          font-family: "Lobster";
+          src: url("LOBSTER 1.4.OTF");
+      }
+
+  .glow {
+  font-size: 130px;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*-webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;*/
+}
+
+@-webkit-keyframes glow {
+  from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -228,23 +240,23 @@ var x = setInterval(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"> <img src="Pics\logo_gala.jpg" class="img-circle logo" alt="logo" width="100" height="100"></a>
+      <a class="navbar-brand" href="#myPage"> <img src="Pics\logo_gala_blanc.png" class="img-circle logo" alt="logo" width="100" height="100"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
         <br />
         <br />
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">GALA TEAM</a></li>
-        <li><a href="#tour">TICKETS</a></li>
+        <li><a href="#myPage">ACCUEIL</a></li>          
+        <li><a href="#band" >L'ÉQUIPE</a></li>
+        <li><a href="#tour">BILLETS</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PLUS
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
+            <li><a href="#">PARTENAIRES</a></li>
+            <li><a href="#">ACTUALITÉS</a></li>
+            
           </ul>
         </li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -258,27 +270,71 @@ var x = setInterval(function () {
      <br />
      
     <div class="example" >
-        <table>
-            <tr>
-                
-                <td>
-                    <h1 style="font-size:50px; font-weight:bolder; font-family: Montserrat, sans-serif; color: khaki; margin-left:650px">Gala2k-19</h1>
-  <p style="font-size:20px;font-family: Montserrat, sans-serif; margin-left:150px; color:black"  >Gala 2018 afterwork</p>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="360" height="315" src="https://www.youtube.com/embed/KjkGJyhtDEM" frameborder="0" ; encrypted-media" ></iframe>
+        
+        <div class="container" style="max-height: 100%;height: 50%; text-align:center">
+            <img src="Pics\logo_gala_blanc.png" style="text-align:center; height: 500px;
+    width: 500px;"/>
+        </div>
+         <%--<h1  class="glow" style="text-align:center;font-family:Lobster; color:#FBBD38">Gala 2019</h1>
+          <h2 style="text-align:center;font-family;font-family:Arial; color:white;font-size:50px; margin-top: -14px;">ESIGELEC</h2> --%>    
+
+      <div class="countdown countdown-container container" style="margin-top: 36px;
+    margin-left: 178px;">
+        <div class="clock row">
+            <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-days" class="clock-canvas"></div>
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-days type-time">DAYS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+            <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-hours" class="clock-canvas"></div>
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-hours type-time">HOURS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-minutes" class="clock-canvas"></div>
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-minutes type-time">MINUTES</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-seconds" class="clock-canvas"></div>
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-seconds type-time">SECONDS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+        </div><!-- /.clock -->
+    </div><!-- /.countdown-wrapper -->
+
+     
+      
+                   <!-- <p style="font-size:20px;font-family: Montserrat, sans-serif; margin-left:150px; color:black"  >Gala 2018 afterwork</p> -->
+                    <div style="   position: relative;margin-top: -214px;left: -460px;">
+                        <iframe  width="850" height="350" src="https://www.youtube.com/embed/KjkGJyhtDEM" frameborder="0" ; encrypted-media" ></iframe>
  </div>
-                   
- <%-- <video class='videocenter' controls="controls"" >
-    <source src="https://www.youtube.com/watch?v=KjkGJyhtDEM" type="video/mp4" style="align-self:center;">--%>
-   
-    Your browser does not support HTML5 video.
-  </video>
-                </td>
-                <td>
-                    <p id="timer"></p>
-                </td>
-            </tr>
-        </table>
+       
   
 </div>
    
@@ -328,9 +384,11 @@ var x = setInterval(function () {
       <span class="sr-only">Next</span>
     </a>
 </div>
-
+    
 <!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
+    <br />
+    <br />
   <h3>THE GALA TEAM</h3>
   <p><em>We love partiying!</em></p>
   <p>We have created a fictional  website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -374,8 +432,28 @@ var x = setInterval(function () {
 
 <!-- Container (TOUR Section) -->
 <div id="tour" class="bg-1">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />        
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   <div class="container">
-    <h3 class="text-center">DATES</h3>
+   <!-- <h3 class="text-center">DATES</h3>
     <p class="text-center">Lorem ipsum we'll play you some music.<br/> Remember to book your tickets!</p>
     <ul class="list-group">
       <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
@@ -407,9 +485,9 @@ var x = setInterval(function () {
           <p>Sunday 29 November 2015</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
         </div>
-      </div>
+      </div>  -->
     </div>
-  </div>
+  </div> 
   
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -556,7 +634,20 @@ $(document).ready(function(){
   });
 })
 </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="kinetic.js"></script>
+    <script type="text/javascript" src="jquery.final-countdown.js"></script>
+    <script type="text/javascript">
+    $('document').ready(function() {
+        'use strict';
 
+    	$('.countdown').final_countdown({
+    	    'start': 1362139200,
+    	    'end': 1388461320,
+    	    'now': 1387461319
+        });
+    });
+    </script>
 </body>
 </html>
 
