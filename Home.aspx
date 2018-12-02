@@ -178,7 +178,8 @@
       padding: 50px;
     background-size: 100%;         /* Generic*/
     /*position: relative;
-  opacity: 0.90;*/
+  opacity: 0.90;*/
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -556,7 +557,7 @@
     </div>
   </div>
   <br>
-  <h3 class="text-center">From The Blog</h3>  
+  <%--<h3 class="text-center">From The Blog</h3>  
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
     <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
@@ -577,7 +578,7 @@
       <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
     </div>
   </div>
-</div>
+</div>--%>
 
 <!-- Add Google Maps -->
 <div id="googleMap"></div>
@@ -597,12 +598,12 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 <!-- Footer -->
-<footer class="text-center">
+<%--<footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
-</footer>
+</footer>--%>
 
 <script>
 $(document).ready(function(){
