@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Members</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+         background-image: url('../Pics/space.jpg');
+         background-position: center;
+         background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover;
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+    img {
+  border-radius: 40%;
+   opacity: 0.90;
+}
+    .example {
+        background-image: url('../Pics/space.jpg');
+        background-repeat: repeat;
+        padding: 50px;
+        background-size: 100%;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        /* Generic*/
+        /*position: relative;
+        opacity: 0.90;*/
+        background-attachment: fixed;
+        /* background-position: center;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .navbar {
+                  font-family: Montserrat, sans-serif;
+                  margin-bottom: 0;
+                  background-color: #2d2d30;
+                  border: 0;
+                  font-size: 11px !important;
+                  letter-spacing: 4px;
+                  opacity: 0.9;
+                  padding-bottom: 30px;
+              }
+
+                  .navbar li a, .navbar .navbar-brand {
+                      color: #d5d5d5 !important;
+                  }
+
+              .navbar-nav li a:hover {
+                  color: #fff !important;
+              }
+
+              .navbar-nav li.active a {
+                  color: #fff !important;
+                  background-color: #29292c !important;
+              }
+
+              .navbar-default .navbar-toggle {
+                  border-color: transparent;
+              }
+
+              .open .dropdown-toggle {
+                  color: #fff;
+                  background-color: #555 !important;
+              }
+
+              .dropdown-menu li a {
+                  color: #000 !important;
+              }
+
+                  .dropdown-menu li a:hover {
+                      background-color: red !important;
+                  }
+</style>
+<body id="memberspage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="example">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"> <img src="Pics\logo_gala_blanc.png" class="img-circle logo" alt="logo" width="100"style="max-width: 100%;height: auto;"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <br />
+                    <br />
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="index.html">L'ÉQUIPE</a></li>
+                        <li><a href="index.html">BILLETS</a></li>
+                        <li><a href="index.html">CONTACT</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                PLUS
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">PARTENAIRES</a></li>
+                                <li><a href="#">ACTUALITÉS</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <!-- Header -->
+        <div class="header">
+            <h1 style="text-align:center;font-family:'Lobster 1.4'; font-size:80px; color:#FBBD38 ">Gala Members</h1>
+            <!--<p>Resize the browser window to see the responsive effect.</p>-->
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="Members/02.jpg" alt="Avatar" style="width: 78%; height: 13%">
+                <img src="Members/03.jpg" style="width: 78%; height: 13%">
+                <img src="Members/04 Prashani.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/05 Maxime Charousset.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/06 Christophe.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/07 Caire.jpg" style="width: 78%; height: 13%">
+                <img src="Members/08.jpeg" style="width: 78%; height: 13%">
+            </div>
+            <div class="column">
+                <img src="Members/09 Ghita Moussadek.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/10 Julien Rimbaud.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/1012.jpg" style="width: 78%; height: 13%">
+                <img src="Members/11.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/12.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/13.jpeg" style="width: 78%; height: 13%">
+            </div>
+            <div class="column">
+                <img src="Members/14.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/15.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Bonus 1.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Bonus 2.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Bonus 3.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Bonus 4.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Contact 1 Hugo Paradis.jpeg" style="width: 78%; height: 13%">
+            </div>
+            <div class="column">
+                <img src="Members/contact 2 Antony Rouaud.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Contact 3 Coralise Chipan.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/Grégoire Brod.jpg" style="width: 78%; height: 13%">
+                <img src="Members/IMG_8366.jpeg" style="width: 78%; height: 13%">
+                <img src="/Members/IMG_8378.jpeg" style="width: 78%; height: 13%">
+                <img src="Members/IMG_8381.jpeg" style="width: 78%; height: 13%">
+            </div>
+        </div>
+
+
+        <!--<div class="row">
+            <div class="column">
+                <img src="Members/02.jpg" alt="Avatar" style="width: 100%">
+                <img src="Members/03.jpg" style="width: 100%">
+                <img src="Members/04 Prashani.jpeg" style="width: 100%">
+                <img src="Members/05 Maxime Charousset.jpeg" style="width: 100%">
+                <img src="Members/06 Christophe.jpeg" style="width: 100%">
+                <img src="Members/07 Caire.jpg" style="width: 100%">
+                <img src="Members/08.jpeg" style="width: 100%">
+            </div>
+            <div class="column">
+                <img src="Members/09 Ghita Moussadek.jpeg" style="width: 100%">
+                <img src="Members/10 Julien Rimbaud.jpeg" style="width: 100%">
+                <img src="Members/1012.jpg" style="width: 100%">
+                <img src="Members/11.jpeg" style="width: 100%">
+                <img src="Members/12.jpeg" style="width: 100%">
+                <img src="Members/13.jpeg" style="width: 100%">
+            </div>
+            <div class="column">
+                <img src="Members/14.jpeg" style="width: 100%">
+                <img src="Members/15.jpeg" style="width: 100%">
+                <img src="Members/Bonus 1.jpeg" style="width: 100%">
+                <img src="Members/Bonus 2.jpeg" style="width: 100%">
+                <img src="Members/Bonus 3.jpeg" style="width: 100%">
+                <img src="Members/Bonus 4.jpeg" style="width: 100%">
+                <img src="Members/Contact 1 Hugo Paradis.jpeg" style="width: 100%">
+            </div>
+            <div class="column">
+                <img src="Members/contact 2 Antony Rouaud.jpeg" style="width: 100%">
+                <img src="Members/Contact 3 Coralise Chipan.jpeg" style="width: 100%">
+                <img src="Members/Grégoire Brod.jpg" style="width: 100%">
+                <img src="Members/IMG_8366.jpeg" style="width: 100%">
+                <img src="/Members/IMG_8378.jpeg" style="width: 100%">
+                <img src="Members/IMG_8381.jpeg" style="width: 100%">
+            </div>
+        </div>-->
+</body>
+</html>
